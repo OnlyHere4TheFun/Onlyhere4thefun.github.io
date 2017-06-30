@@ -10,11 +10,13 @@
    display: inline-block;
    float: right;
    color: #4F8AAD;
+   font-family: OpensansLight;
 }
 #signup {
    display: inline-block;
    float: right;
    color: #4F8AAD;
+   font-family: OpensansLight;
 }
 #header-middle-text {
    color: white;
