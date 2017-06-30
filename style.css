@@ -1,0 +1,46 @@
+@font-face {
+   font-family: OpensansLight;
+   src: url(opensanslight.ttf);
+}
+@font-face {
+   font-family: OpensansRegular;
+   src: url(opensansregular.ttf);
+}
+#header-middle-text {
+   color: white;
+   display: inline-block;
+   font-size: 50px;
+   font-family: OpensansLight;
+}
+body {
+   background-color: #1e1c1c;
+}
+#header-smaller {
+   margin-top: -90px;
+}
+#header-smaller-text {
+   color: #d2dbe1;
+   display: inline-block;
+   font-family: OpensansLight;
+}
+#header-between {
+   background-color: #bc3f3f;
+}
+#header-big {
+   color: white;
+   display: inline-block;
+   font-size: 100px;
+   font-family: OpensansLight;
+   margin-top: -10px;
+}
+#header {
+   text-align: center;
+}
+#header-text {
+   font-family: OpensansLight;
+   color: white;
+   display: inline-block;
+}
+#warmth {
+   color: #e96c6c;
+}
