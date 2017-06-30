@@ -11,12 +11,14 @@
    float: right;
    color: #4F8AAD;
    font-family: OpensansLight;
+   padding: 8px;
 }
 #signup {
    display: inline-block;
    float: right;
    color: #4F8AAD;
    font-family: OpensansLight;
+   padding: 8px;
 }
 #header-middle-text {
    color: white;
