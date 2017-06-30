@@ -8,9 +8,13 @@
 }
 #login {
    display: inline-block;
+   float: right;
+   color: #4F8AAD;
 }
 #signup {
    display: inline-block;
+   float: right;
+   color: #4F8AAD;
 }
 #header-middle-text {
    color: white;
