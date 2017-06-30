@@ -6,6 +6,12 @@
    font-family: OpensansRegular;
    src: url(opensansregular.ttf);
 }
+#login {
+   display: inline-block;
+}
+#signup {
+   display: inline-block;
+}
 #header-middle-text {
    color: white;
    display: inline-block;
