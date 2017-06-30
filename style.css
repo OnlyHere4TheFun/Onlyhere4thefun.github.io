@@ -7,7 +7,7 @@
    src: url(opensansregular.ttf);
 }
 #loginwrapper {
-   height: 20px;
+   height: 0px;
 }
 #login {
    display: inline-block;
