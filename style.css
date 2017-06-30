@@ -6,6 +6,9 @@
    font-family: OpensansRegular;
    src: url(opensansregular.ttf);
 }
+#loginwrapper {
+   height: 20px;
+}
 #login {
    display: inline-block;
    float: right;
