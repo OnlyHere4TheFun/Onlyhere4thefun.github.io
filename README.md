@@ -1,5 +1,5 @@
 # Onlyhere4thefun.github.io
 Guess what. It's only here for the fun.
 
-#Author
+# Author
 Me. Just. Me.
