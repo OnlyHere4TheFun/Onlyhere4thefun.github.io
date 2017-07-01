@@ -1,14 +1,71 @@
 @font-face {
    font-family: OpensansLight;
-   src: url(opensanslight.ttf);
-}
-@font-face {
-   font-family: OpensansRegular;
-   src: url(opensansregular.ttf);
+   src: url(../opensanslight.ttf);
 }
 body {
 	background-color: #1e1c1c;
 }
+#login-box {
+	margin-top: 100px;
+	padding: 40px 10px 20px 10px;
+	border-radius: 10px;
+	background-color: #bc3f3f;
+	display: inline-block;
+}
+#main-body {
+	text-align: center;
+}
 #header-login {
 	font-family: OpensansLight;
+	font-size: 45px;
+	letter-spacing: 2px;
+	display: inline-block;
+	padding: none;
+	color: white;
+}
+#login {
+	display: inline-block;
+	padding: 5px;
+	font-family: OpensansLight;
+	color: #4F8AAD;
+	background-color: #1e1c1c;
+	border-radius: 5px;
+}
+.logina {
+	text-decoration: none;
+	color : #4F8AAD;
+}
+#signup {
+	display: inline-block;
+	padding: 5px;
+	font-family: OpensansLight;
+	color: #4F8AAD;
+	background-color: #1e1c1c;
+	border-radius: 5px;
+}
+#email-input {
+	border: none;
+	height: 30px;
+	width: 70%;
+	border-radius: 3px;
+	font-family: OpensansLight;
+	font-size: 15px;
+	outline: none;
+	/*border: 1px solid #bc3f3f;*/
+}
+#pass-input {
+	border: none;
+	margin-top: 10px;
+	height: 30px;
+	width: 70%;
+	border-radius: 3px;
+	font-family: OpensansLight;
+	outline: none;
+	font-size: 15px;
+	/*border: 1px solid #bc3f3f;*/
+}
+#header {
+	text-align: center;
+	background-color: #bc3f3f;
+	margin-top: 40px;
 }
