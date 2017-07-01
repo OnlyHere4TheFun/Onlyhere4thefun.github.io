@@ -37,7 +37,7 @@ body {
    background-color: #1e1c1c;
 }
 #header-smaller {
-   margin-top: -90px;
+   margin-top: 0px;
 }
 #header-smaller-text {
    color: #d2dbe1;
@@ -52,7 +52,7 @@ body {
    display: inline-block;
    font-size: 100px;
    font-family: OpensansLight;
-   margin-top: -10px;
+   margin-top: 10px;
 }
 #header {
    text-align: center;
