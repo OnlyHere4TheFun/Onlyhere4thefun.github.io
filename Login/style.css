@@ -1,0 +1,14 @@
+@font-face {
+   font-family: OpensansLight;
+   src: url(opensanslight.ttf);
+}
+@font-face {
+   font-family: OpensansRegular;
+   src: url(opensansregular.ttf);
+}
+body {
+	background-color: #1e1c1c;
+}
+#header-login {
+	font-family: OpensansLight;
+}
