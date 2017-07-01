@@ -8,5 +8,3 @@
     messagingSenderId: "872492202975"
   };
   firebase.initializeApp(config);
-  
-  
