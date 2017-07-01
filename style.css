@@ -9,6 +9,10 @@
 #loginwrapper {
    height: 0px;
 }
+a.loglink {
+   color: #4F8AAD;
+   text-decoration: none;
+}
 #login {
    display: inline-block;
    float: right;
