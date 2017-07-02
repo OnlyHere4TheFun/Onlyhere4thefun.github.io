@@ -15,6 +15,10 @@ a.loglink {
    color: #4F8AAD;
    text-decoration: none;
 }
+.loglink:hover {
+   text-decoration: none;
+   color: #4F8AAD;
+}
 #login {
    display: inline-block;
    float: right;

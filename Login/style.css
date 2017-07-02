@@ -37,6 +37,10 @@ body {
 	text-decoration: none;
 	color : #4F8AAD;
 }
+.logina:hover {
+	text-decoration: none;
+	color : #4F8AAD;
+}
 #signup {
 	display: inline-block;
 	padding: 5px;
