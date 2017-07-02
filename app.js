@@ -8,3 +8,19 @@
     messagingSenderId: "872492202975"
   };
   firebase.initializeApp(config);
+
+  firebase.auth().onAuthStateChanged(function(firebaseUser) {
+    if (firebaseUser) {
+      getElem('login').style.visibility = 'hidden';
+      getElem('signup').style.visibility = 'hidden';
+    } else {
+
+    }
+  })
+
+
+
+
+    function getElem(elemID) {
+    return document.getElementById(elemID);
+  }
