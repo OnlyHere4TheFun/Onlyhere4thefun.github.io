@@ -34,9 +34,16 @@
 
     var promise = auth.createUserWithEmailAndPassword(email, password);
 
-    promise.catch(function(e) {alert(e.message)});
+    promise.catch(function(e) {bootbox.alert(e.message)});
   });
 
+  firebase.auth().onAuthStateChanged(function(firebaseUser) {
+    if (firebaseUser) {
+      window.location = '/Logged';
+    } else {
+
+    }
+  })
 
 
 

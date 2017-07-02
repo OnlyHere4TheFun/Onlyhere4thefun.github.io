@@ -20,7 +20,8 @@ body {
 	font-size: 45px;
 	letter-spacing: 2px;
 	display: inline-block;
-	padding: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	color: white;
 }
 #login {
@@ -30,6 +31,7 @@ body {
 	color: #4F8AAD;
 	background-color: #1e1c1c;
 	border-radius: 5px;
+	margin-top: 5px;
 }
 .logina {
 	text-decoration: none;
@@ -42,6 +44,7 @@ body {
 	color: #4F8AAD;
 	background-color: #1e1c1c;
 	border-radius: 5px;
+	margin-top: 8px;
 }
 #email-input {
 	border: none;
