@@ -15,8 +15,6 @@
   var btnSignUp = getElem('signup');
 
 
-
-
   btnLogin.addEventListener('click', function(e) {
     var email = txtEmail.value;
     var password = txtPass.value;
