@@ -1,0 +1,31 @@
+/*Logged in page*/
+
+
+@font-face {
+   font-family: OpensansLight;
+   src: url(../opensanslight.ttf);
+}
+@font-face {
+   font-family: OpensansRegular;
+   src: url(../opensansregular.ttf);
+}
+
+body {
+	background-color: #1e1c1c;
+}
+#Success {
+	color: white;
+	font-family: OpensansLight;
+	font-size: 20px;
+	text-align: center;
+	background-color: #bc3f3f;
+	padding: 20px;
+}
+#redir {
+	font-family: OpensansLight;
+	text-align: center;
+	font-size: 30px;}
+a {
+	color: #4F8AAD;
+	text-decoration: none;
+}
