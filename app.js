@@ -14,7 +14,8 @@
       getElem('login').style.visibility = 'hidden';
       getElem('signup').style.visibility = 'hidden';
     } else {
-
+      getElem('login').style.visibility = '';
+      getElem('signup').style.visibility = '';
     }
   })
 

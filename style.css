@@ -10,6 +10,7 @@
 }
 #loginwrapper {
    height: 0px;
+   visibility: hidden;
 }
 a.loglink {
    color: #4F8AAD;
