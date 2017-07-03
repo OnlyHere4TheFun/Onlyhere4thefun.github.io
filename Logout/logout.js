@@ -24,7 +24,7 @@
     if (firebaseUser) {
       sureM.innerHTML = 'Are you sure you want to log out: ' + firebaseUser.email;
     } else {
-      window.location('/');
+      window.location = '/';
     }
   });
 
