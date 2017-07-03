@@ -7,7 +7,7 @@
     storageBucket: "onlyhere4thefun-7c384.appspot.com",
     messagingSenderId: "872492202975"
   };
-  
+
   firebase.initializeApp(config);
 
   var successMessage = document.getElementById('Success');
@@ -26,3 +26,5 @@
     function getElem(elemID) {
     return document.getElementById(elemID);
   }
+
+  // All made by Alexander Ristinmaa 2017

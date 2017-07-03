@@ -22,7 +22,7 @@
 
     var promise = auth.signInWithEmailAndPassword(email, password);
 
-    promise.catch(function(e) {alert(e.message)});
+    promise.catch(function(e) {bootbox.alert(e.message)});
   });
 
   btnSignUp.addEventListener('click', function(e) {
@@ -49,4 +49,6 @@
   function getElem(elemID) {
     return document.getElementById(elemID);
   }
+
+  // All made by Alexander Ristinmaa 2017
 

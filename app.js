@@ -27,3 +27,5 @@
     function getElem(elemID) {
     return document.getElementById(elemID);
   }
+
+  // All made by Alexander Ristinmaa 2017
