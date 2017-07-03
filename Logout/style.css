@@ -1,0 +1,21 @@
+/*LOGOUT PAGE*/
+
+
+@font-face {
+   font-family: OpensansLight;
+   src: url(../opensanslight.ttf);
+}
+body {
+	background-color: #1e1c1c;
+}
+#sure {
+	color: white;
+	font-family: OpensansLight;
+	text-align: center;
+}
+#logout {
+	color: #4F8AAD;
+	font-family: OpensansLight;
+	text-align: center;
+	font-size: 40px;
+}

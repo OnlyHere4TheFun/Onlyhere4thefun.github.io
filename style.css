@@ -34,6 +34,13 @@ a.loglink {
    font-family: OpensansLight;
    padding: 8px;
 }
+#logout {
+   display: inline-block;
+   float: right;
+   color: #4F8AAD;
+   font-family: OpensansLight;
+   padding: 8px;
+}
 #header-middle-text {
    color: white;
    display: inline-block;

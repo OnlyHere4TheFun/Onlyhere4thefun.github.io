@@ -7,23 +7,28 @@
     storageBucket: "onlyhere4thefun-7c384.appspot.com",
     messagingSenderId: "872492202975"
   };
+  
   firebase.initializeApp(config);
+
+  var sureM = getElem('sure');
+  var btnLogout = getElem('logoutlink');
+
+
+  logoutlink.addEventListener('click', function() {
+    var auth = firebase.auth();
+
+    auth.signOut();
+  });
 
   firebase.auth().onAuthStateChanged(function(firebaseUser) {
     if (firebaseUser) {
-      getElem('login').style.visibility = 'hidden';
-      getElem('signup').style.visibility = 'hidden';
-      getElem('logout').style.visibility = 'visible';
+      sureM.innerHTML = 'Are you sure you want to log out: ' + firebaseUser.email;
     } else {
-      getElem('login').style.visibility = 'visible';
-      getElem('signup').style.visibility = 'visible';
-      getElem('logout').style.visibility = 'hidden';
+      window.location('/')
     }
   });
 
-
-
-
-    function getElem(elemID) {
+  function getElem(elemID) {
     return document.getElementById(elemID);
   }
+
