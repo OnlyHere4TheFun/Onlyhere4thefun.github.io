@@ -25,21 +25,21 @@ a.loglink {
    float: right;
    color: #4F8AAD;
    font-family: OpensansLight;
-   padding: 8px;
+   padding: 5px;
 }
 #signup {
    display: inline-block;
    float: right;
    color: #4F8AAD;
    font-family: OpensansLight;
-   padding: 8px;
+   padding: 5px;
 }
 #logout {
    display: inline-block;
    float: right;
    color: #4F8AAD;
    font-family: OpensansLight;
-   padding: 8px;
+   padding: 5px;
 }
 #header-middle-text {
    color: white;
