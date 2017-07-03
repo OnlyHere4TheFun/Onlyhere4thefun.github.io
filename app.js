@@ -13,11 +13,11 @@
     if (firebaseUser) {
       getElem('login').style.visibility = 'hidden';
       getElem('signup').style.visibility = 'hidden';
-      getElem('logout').style.visibility = 'visible';
+      getElem('logout').style.display = 'inline-block';
     } else {
       getElem('login').style.visibility = 'visible';
       getElem('signup').style.visibility = 'visible';
-      getElem('logout').style.visibility = 'hidden';
+      getElem('logout').style.display = 'none';
     }
   });
 
