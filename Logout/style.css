@@ -19,3 +19,8 @@ body {
 	text-align: center;
 	font-size: 40px;
 }
+#logoutlink {
+	color: #4F8AAD;
+	font-family: OpensansLight;
+	text-decoration: none;
+} 
