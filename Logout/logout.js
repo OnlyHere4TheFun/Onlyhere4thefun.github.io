@@ -14,7 +14,7 @@
   var btnLogout = getElem('logoutlink');
 
 
-  logoutlink.addEventListener('click', function() {
+  btnLogout.addEventListener('click', function() {
     var auth = firebase.auth();
 
     auth.signOut();
@@ -24,7 +24,7 @@
     if (firebaseUser) {
       sureM.innerHTML = 'Are you sure you want to log out: ' + firebaseUser.email;
     } else {
-      window.location('/')
+      window.location('/');
     }
   });
 
