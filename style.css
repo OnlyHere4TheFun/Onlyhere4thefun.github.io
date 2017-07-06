@@ -6,7 +6,7 @@
 }
 @font-face {
    font-family: OpensansRegular;
-   src: url(opensansregular.ttf);
+   src: url(opensansregular2.ttf);
 }
 #loginwrapper {
    height: 0px;
@@ -70,7 +70,7 @@ body {
 .post-title {
    color: white;
    text-align: center;
-   font-family: OpensansLight;
+   font-family: OpensansRegular;
    margin-top: 0px;
    font-size: 30px;
 }
