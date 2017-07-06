@@ -77,6 +77,9 @@ body {
 .post-desc {
    color: white;
    text-align: left;
+   padding: 50px;
+   padding-left: 30%;
+   padding-right: 30%;
    font-family: OpensansLight;
 }
 .post-author {
