@@ -9,7 +9,7 @@
   };
   firebase.initializeApp(config);
 
-    function getElem(elemID) {
+  function getElem(elemID) {
     return document.getElementById(elemID);
   }
 
