@@ -11,9 +11,10 @@ var dbRefPosts = firebase.database().ref().child('Posts');
 
 firebase.auth().onAuthStateChanged(function(firebaseUser) {
   if (firebaseUser) {
-    getElem('login').style.visibility = 'hidden';
-    getElem('signup').style.visibility = 'hidden';
-    getElem('logout').style.visibility = 'visible';
+    getElem('login').style.display = 'none';
+    getElem('signup').style.display = 'none';
+    getElem('logout').style.display = 'inline-block';
+    getElem('post').style.display = 'inline-block';
     dbRefPosts.on('value', function(snap) {
       mainWrap.innerHTML = '';
       var response = JSON.parse(JSON.stringify(snap.val()));
@@ -47,9 +48,10 @@ firebase.auth().onAuthStateChanged(function(firebaseUser) {
       }
     });
   } else {
-    getElem('login').style.visibility = 'visible';
-    getElem('signup').style.visibility = 'visible';
-    getElem('logout').style.visibility = 'hidden';
+    getElem('login').style.display = 'inline-block';
+    getElem('signup').style.display = 'inline-block';
+    getElem('post').style.display = 'inline-block';
+    getElem('logout').style.display = 'none';
     mainWrap.innerHTML = 'Log in to see this text.'
   }
 })

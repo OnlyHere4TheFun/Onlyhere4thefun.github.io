@@ -10,7 +10,6 @@
 }
 #loginwrapper {
    height: 0px;
-   visibility: hidden;
 }
 a.loglink {
    color: #4F8AAD;
@@ -20,12 +19,22 @@ a.loglink {
    text-decoration: none;
    color: #4F8AAD;
 }
+#post {
+   display: inline-block;
+   float: left;
+   color: #4F8AAD;
+   font-family: OpensansLight;
+   padding: 5px;
+   margin-top: 8px;
+   font-size: 17px;
+}
 #login, #signup, #logout {
    display: inline-block;
    float: right;
    color: #4F8AAD;
    font-family: OpensansLight;
    padding: 5px;
+   padding-right: 10px;
    margin-top: 8px;
    font-size: 17px;
 }
