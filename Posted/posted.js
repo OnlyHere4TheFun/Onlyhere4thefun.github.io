@@ -23,7 +23,8 @@ firebase.auth().onAuthStateChanged(function(firebaseUser) {
 
       var key = dbRefPosts.push().key;
 
-      var update[key] = parsedData;
+      var update = [];
+      update[key] = parsedData;
 
       dbRefPosts.update(update);
 
