@@ -18,7 +18,7 @@ firebase.auth().onAuthStateChanged(function(firebaseUser) {
 
       var parsedData = JSON.parse(data);
       console.log(parsedData);
-      //showPost(parsedData);
+      showPost(parsedData);
       sessionStorage.clear();
     } else {
         window.location = '/Login';
@@ -35,9 +35,9 @@ function showPost(response) {
         var postSeparator2 = document.createElement('div');
         var postAuthor = document.createElement('div');
 
-        postTitle.innerHTML = response[0];
-        postDesc.innerHTML = response[1];
-        postAuthor.innerHTML = response[2];
+        postTitle.innerHTML = response.Name;
+        postDesc.innerHTML = response.Desc;
+        postAuthor.innerHTML = response.Author;
 
 
         postTitle.classList.add('post-title');
