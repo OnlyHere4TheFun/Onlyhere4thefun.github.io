@@ -20,19 +20,15 @@
   var dbRefPosts = firebase.database().ref().child('Posts');
 
   btnPost.addEventListener('click', function(e) {
-    console.log('Hello');
       var toPost = {
         "Name": txtTitle.value,
         "Description": txtDesc.value,
         "Author": txtAuthor.value
       }
-      dbRefPosts.push(toPost);
+      
+      var thePost = JSON.stringify(toPost);
 
-      var b = txtTitle.value + ', ' + txtDesc.value + ', ' + txtAuthor.value;
-
-      var nxtUrl = '/Posted?header=' + encodeURIComponent(txtTitle.value) + '&desc=' + encodeURIComponent(txtDesc.value) + '&author=' + encodeURIComponent(txtAuthor.value);
-
-      window.location = nxtUrl;
+      sessionStorage.setItem('post', 'thePost');
   });
 
   firebase.auth().onAuthStateChanged(function(firebaseUser) {

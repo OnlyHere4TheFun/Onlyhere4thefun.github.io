@@ -14,42 +14,14 @@
 
 firebase.auth().onAuthStateChanged(function(firebaseUser) {
     if (firebaseUser) {
-    var data = getParams();
-    var newData = decodeParams(data);
-    showPost(newData);
+      var data = sessionStorage.getItem('post');
+      showPost(data);
+      sessionStorage.clear();
     } else {
         window.location = '/Login';
     }
 });
 
-function getParams() {
-            var url = document.location.href,
-        params = url.split('?')[1].split('&'),
-        data = {}, tmp;
-    for (var i = 0, l = params.length; i < l; i++) {
-         tmp = params[i].split('=');
-         data[tmp[0]] = tmp[1];
-    }
-    return data;
-}
-
-function decodeParams(data) {
-  if (data.header && data.desc && data.author) {
-          var dataText = [];
-          for (i in data) {
-            var dataArr = data[i].split('%20');
-            var dataTemp = '';
-            for (j in dataArr) {
-              dataTemp += dataArr[j] + ' ';
-            }
-            data[i] = dataTemp;
-            dataText.push(data[i]);
-          }
-          return dataText;
-      } else {
-        window.location = '/';
-      }
-}
 
 
 function showPost(response) {
