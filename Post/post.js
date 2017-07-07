@@ -28,7 +28,7 @@
       
       var thePost = JSON.stringify(toPost);
 
-      sessionStorage.setItem('post', 'thePost');
+      sessionStorage.setItem('post', thePost);
 
       window.location = '/Posted';
   });
