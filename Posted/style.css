@@ -1,0 +1,59 @@
+/*POST SUCCESS PAGE */
+
+@font-face {
+   font-family: OpensansLight;
+   src: url(../opensanslight.ttf);
+}
+@font-face {
+   font-family: OpensansRegular;
+   src: url(../opensansregular2.ttf);
+}
+
+body {
+	background-color: #1e1c1c;
+}
+#previewHeader {
+	color: white;
+	text-align: center;
+}
+.post-title {
+   color: white;
+   text-align: center;
+   font-family: OpensansRegular;
+   margin-top: 0px;
+   font-size: 30px;
+}
+.post-desc {
+   color: white;
+   text-align: left;
+   padding: 30px;
+   padding-left: 30%;
+   padding-right: 30%;
+   font-family: OpensansLight;
+}
+.post-author {
+   color: white;
+   font-family: OpensansLight;
+   text-align: center;
+   margin-top: 30px;
+   padding: 20px;
+}
+.post-separator {
+  background-color: white;
+  height: 1px;
+  width: 23%;
+  margin-left: 25%;
+  float: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.post-separator1 {
+  background-color: white;
+  height: 1px;
+  width: 23%;
+  margin-left: 4%;
+  float: right;
+  margin-right: 25%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

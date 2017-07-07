@@ -27,6 +27,12 @@
         "Author": txtAuthor.value
       }
       dbRefPosts.push(toPost);
+
+      var b = txtTitle.value + ', ' + txtDesc.value + ', ' + txtAuthor.value;
+
+      var nxtUrl = '/Posted?header=' + encodeURIComponent(txtTitle.value) + '&desc=' + encodeURIComponent(txtDesc.value) + '&author=' + encodeURIComponent(txtAuthor.value);
+
+      window.location = nxtUrl;
   });
 
   firebase.auth().onAuthStateChanged(function(firebaseUser) {
