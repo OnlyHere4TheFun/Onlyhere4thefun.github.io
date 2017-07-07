@@ -30,6 +30,8 @@
 
       sessionStorage.setItem('post', thePost);
 
+      dbRefPosts.push(toPost);
+
       window.location = '/Posted';
   });
 
