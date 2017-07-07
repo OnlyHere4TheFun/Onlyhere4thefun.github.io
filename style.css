@@ -44,6 +44,10 @@ a.loglink {
    font-size: 50px;
    font-family: OpensansLight;
 }
+#mainWrap {
+   color: white;
+   text-align: center;
+}
 body {
    background-color: #1e1c1c;
 }

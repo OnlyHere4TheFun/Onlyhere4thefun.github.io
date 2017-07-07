@@ -16,6 +16,12 @@ a.loglink {
    text-decoration: none;
    color: #4F8AAD;
 }
+#header {
+	text-align: center;
+	font-family: OpensansRegular;
+	color: white;
+	background-color: #bc3f3f;
+}
 #post {
    display: block;
    text-align: center;

@@ -4,7 +4,6 @@ var mainWrap = getElem('main');
 
 
 // Create References to database
-var dbRefPosts = firebase.database().ref().child('Posts');
 
 
 
@@ -50,7 +49,7 @@ firebase.auth().onAuthStateChanged(function(firebaseUser) {
   } else {
     getElem('login').style.display = 'inline-block';
     getElem('signup').style.display = 'inline-block';
-    getElem('post').style.display = 'inline-block';
+    getElem('post').style.display = 'none';
     getElem('logout').style.display = 'none';
     mainWrap.innerHTML = 'Log in to see this text.'
   }
