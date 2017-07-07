@@ -1,0 +1,59 @@
+/*POST PAGE*/
+
+@font-face {
+   font-family: OpensansLight;
+   src: url(../opensanslight.ttf);
+}
+@font-face {
+   font-family: OpensansRegular;
+   src: url(../opensansregular.ttf);
+}
+a.loglink {
+   color: #4F8AAD;
+   text-decoration: none;
+}
+.loglink:hover {
+   text-decoration: none;
+   color: #4F8AAD;
+}
+#post {
+   display: block;
+   text-align: center;
+   color: #4F8AAD;
+   font-family: OpensansLight;
+   padding: 5px;
+   margin-top: 8px;
+   font-size: 17px;
+}
+#descBox {
+	resize: none;
+	background-color: white;
+	width: 80%;
+	margin-left: 10%;
+	height: 500px;
+	outline: none;
+	font-family: OpensansLight;
+	font-size: 13px;
+	padding: 10px;
+	margin-top: 20px;
+}
+#titleBox {
+	height: 30px;
+	width: 20%;
+	margin-left: 40%;
+	outline: none;
+	font-family: OpensansLight;
+	font-size: 15px;
+}
+#authorBox {
+	height: 25px;
+	width: 20%;
+	margin-left: 40%;
+	outline: none;
+	font-family: OpensansLight;
+	font-size: 13px;
+	margin-top: 10px;
+}
+body {
+	background-color: #1e1c1c;
+}
