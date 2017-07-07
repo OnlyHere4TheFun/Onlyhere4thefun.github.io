@@ -19,10 +19,14 @@ firebase.auth().onAuthStateChanged(function(firebaseUser) {
       var data = sessionStorage.getItem('post');
 
       var parsedData = JSON.parse(data);
-      console.log(parsedData);
+      console.log(JSON.stringify(parsedData));
 
-      dbRefPosts.push(parsedData);
-      
+      var key = dbRefPosts.push();
+
+      dbRefPosts.update(key,parsedData);
+
+
+
       if (parsedData.Name && parsedData.Description && parsedData.Author) {
         showPost(parsedData);
       }
