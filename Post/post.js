@@ -10,9 +10,9 @@
   firebase.initializeApp(config);
 
   // Get Elements From The DOM
-  var txtTitle = getElem('titleBox').value;
-  var txtDesc = getElem('descBox').value;
-  var txtAuthor = getElem('authorBox').value;
+  var txtTitle = getElem('titleBox');
+  var txtDesc = getElem('descBox');
+  var txtAuthor = getElem('authorBox');
   var btnPost = getElem('post');
 
   // Createe Database Reference
@@ -22,9 +22,9 @@
   btnPost.addEventListener('click', function(e) {
     console.log('Hello');
       var toPost = {
-        "Name": txtTitle,
-        "Description": txtDesc,
-        "Author": txtAuthor
+        "Name": txtTitle.value,
+        "Description": txtDesc.value,
+        "Author": txtAuthor.value
       }
       dbRefPosts.push(toPost);
   });
