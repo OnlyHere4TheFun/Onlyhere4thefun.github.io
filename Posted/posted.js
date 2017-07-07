@@ -30,7 +30,7 @@ firebase.auth().onAuthStateChanged(function(firebaseUser) {
 
 
 
-      if (parsedData.Name && parsedData.Description && parsedData.Author) {
+      if (parsedData["Name"] && parsedData["Description"] && parsedData["Author"]) {
         showPost(parsedData);
       }
       sessionStorage.clear();
