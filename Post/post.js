@@ -29,6 +29,8 @@
       var thePost = JSON.stringify(toPost);
 
       sessionStorage.setItem('post', 'thePost');
+
+      window.location = '/Posted';
   });
 
   firebase.auth().onAuthStateChanged(function(firebaseUser) {
