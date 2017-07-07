@@ -15,7 +15,9 @@
 firebase.auth().onAuthStateChanged(function(firebaseUser) {
     if (firebaseUser) {
       var data = sessionStorage.getItem('post');
-      showPost(JSON.parse(data));
+
+      var parsedData = JSON.parse(data);
+      showPost(parsedData);
       sessionStorage.clear();
     } else {
         window.location = '/Login';
