@@ -25,12 +25,12 @@
         "Description": txtDesc.value,
         "Author": txtAuthor.value
       }
+
+      dbRefPosts.push(toPost);
       
       var thePost = JSON.stringify(toPost);
 
       sessionStorage.setItem('post', thePost);
-
-      dbRefPosts.push(toPost);
 
       window.location = '/Posted';
   });
