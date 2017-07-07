@@ -18,7 +18,9 @@ firebase.auth().onAuthStateChanged(function(firebaseUser) {
 
       var parsedData = JSON.parse(data);
       console.log(parsedData);
-      showPost(parsedData);
+      if (parsedData.Name && parsedData.Description && parsedData.Author) {
+        showPost(parsedData);
+      }
       sessionStorage.clear();
     } else {
         window.location = '/Login';
@@ -36,7 +38,7 @@ function showPost(response) {
         var postAuthor = document.createElement('div');
 
         postTitle.innerHTML = response.Name;
-        postDesc.innerHTML = response.Desc;
+        postDesc.innerHTML = response.Description;
         postAuthor.innerHTML = response.Author;
 
 
