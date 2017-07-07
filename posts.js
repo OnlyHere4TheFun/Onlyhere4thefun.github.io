@@ -5,7 +5,7 @@ var mainWrap = getElem('main');
 
 // Create References to database
 
-
+dbRefPosts = firebase.database().ref().child('Posts');
 
 
 firebase.auth().onAuthStateChanged(function(firebaseUser) {
