@@ -15,9 +15,6 @@
   var txtAuthor = getElem('authorBox');
   var btnPost = getElem('post');
 
-  // Createe Database Reference
-
-  var dbRefPosts = firebase.database().ref().child('Posts');
 
   btnPost.addEventListener('click', function(e) {
       var toPost = {
@@ -26,7 +23,6 @@
         "Author": txtAuthor.value
       }
 
-      dbRefPosts.push(toPost);
       
       var thePost = JSON.stringify(toPost);
 

@@ -12,12 +12,17 @@
   var dataStuff = getElem('dataHolder'); 
   var mainWrap = getElem('main');
 
+  var dbRefPosts = firebase.database().ref().child('Posts');
+
 firebase.auth().onAuthStateChanged(function(firebaseUser) {
     if (firebaseUser) {
       var data = sessionStorage.getItem('post');
 
       var parsedData = JSON.parse(data);
       console.log(parsedData);
+
+      dbRefPosts.push(parsedData);
+      
       if (parsedData.Name && parsedData.Description && parsedData.Author) {
         showPost(parsedData);
       }
