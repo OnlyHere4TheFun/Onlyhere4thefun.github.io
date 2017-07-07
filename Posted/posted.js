@@ -21,9 +21,11 @@ firebase.auth().onAuthStateChanged(function(firebaseUser) {
       var parsedData = JSON.parse(data);
       console.log(JSON.stringify(parsedData));
 
-      var key = dbRefPosts.push();
+      var key = dbRefPosts.push().key;
 
-      dbRefPosts.update(key,parsedData);
+      var update[key] = parsedData;
+
+      dbRefPosts.update(update);
 
 
 
