@@ -18,9 +18,9 @@
 
   btnPost.addEventListener('click', function(e) {
       var toPost = {
-        Name: txtTitle.value,
-        Description: txtDesc.value,
-        Author: txtAuthor.value
+        "Name": txtTitle.value,
+        "Description": txtDesc.value,
+        "Author": txtAuthor.value
       }
 
       
