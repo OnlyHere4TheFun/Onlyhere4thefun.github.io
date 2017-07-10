@@ -6,8 +6,10 @@
   var txtAuthor = getElem('authorBox');
   var btnPost = getElem('post');
 
-
-  btnPost.addEventListener('click', function(e) {
+  firebase.auth().onAuthStateChanged(function(firebaseUser) {
+    if (firebaseUser) {
+      
+      btnPost.addEventListener('click', function(e) {
       var toPost = {
         Name: txtTitle.value,
         Description: txtDesc.value,
@@ -21,10 +23,6 @@
 
       window.location = '/Posted';
   });
-
-  firebase.auth().onAuthStateChanged(function(firebaseUser) {
-    if (firebaseUser) {
-
     } else {
      window.location = '/Login';
     }
